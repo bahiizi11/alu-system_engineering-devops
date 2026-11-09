@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>404 - Page not found</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: "Segoe UI", system-ui, sans-serif;
+    color: #e8eaf6;
+    background: radial-gradient(circle at 20% 20%, #3949ab, #1a1a2e 60%, #0f0f1a);
+  }
+  .box { padding: 2rem; max-width: 36rem; }
+  h1 {
+    font-size: clamp(6rem, 25vw, 12rem);
+    line-height: 1;
+    background: linear-gradient(90deg, #ff6f91, #ffc371);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: float 3s ease-in-out infinite;
+  }
+  h2 { font-size: 1.6rem; margin: 1rem 0 0.5rem; font-weight: 600; }
+  p { color: #b0b6d9; margin-bottom: 2rem; }
+  a {
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    border-radius: 999px;
+    color: #1a1a2e;
+    background: linear-gradient(90deg, #ff6f91, #ffc371);
+    text-decoration: none;
+    font-weight: 600;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  a:hover { transform: translateY(-3px); box-shadow: 0 8px 24px rgba(255, 111, 145, 0.4); }
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-12px); }
+  }
+</style>
+</head>
+<body>
+  <div class="box">
+    <h1>404</h1>
+    <h2>Ceci n'est pas une page</h2>
+    <p>The page you are looking for has wandered off. Let's get you back on track.</p>
+    <a href="/">Back to home</a>
+  </div>
+</body>
+</html>
